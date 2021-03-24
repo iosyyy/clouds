@@ -4,13 +4,21 @@ server:
     context-path: /payment
     session:
       timeout: 60
-
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://127.0.0.1:3306/my_db?useUnicode=true&characterEncoding=utf-8&useSSL=true&serverTimezone=UTC
     username: root
     password: root
+  application:
+    name: cloud-payment-service
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true #是否将eureka注册写不写都是一样的但是建议将其注册
+    service-url:
+      defaultZone: http://localhost:7001/eureka/
 # mybatis相关
 mybatis:
   # 实体类包路径
