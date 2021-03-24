@@ -531,3 +531,71 @@ public class EurakaApplication {
 先运行服务端再运行客户端即可完成
 
 ![image-20210324191954925](https://tests-1305221371.cos.ap-nanjing.myqcloud.com/20210324192002.png)
+
+创建eureka的集群
+
+原理:互相注册也就是把其他eureka当成注册者
+
+首先由于单机测试为了能更好的分别具体是哪个EurakaApplication所以增加配置文件
+
+修改C:\WINDOWS\System32\drivers\etc\hosts
+
+增加
+
+```txt
+127.0.0.1 eureka7001.com
+127.0.0.1 eureka7002.com
+```
+
+可能由于权限问题无法更改
+
+更改方法是先在桌面创建hosts文件然后再把文件拖入上面的文件夹中即可.
+
+然后修改`application.yml`文件
+
+```yml
+server:
+  port: 7001
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false #是否将eureka注册写不写都是一样的但是建议将其注册
+    service-url:
+      defaultZone: http://eureka7002.com:7002/eureka/
+  instance:
+    hostname:  eureka7001.com #eureka的服务端名字
+```
+
+```yml
+server:
+  port: 7002
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false #是否将eureka注册写不写都是一样的但是建议将其注册
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka/
+  instance:
+    hostname:  eureka7002.com #eureka的服务端名字
+```
+
+然后启动eureka即可
+
+注意观察截图中的两个地方
+
+![image-20210324203118403](https://tests-1305221371.cos.ap-nanjing.myqcloud.com/20210324203118.png)
+
+![image-20210324203136336](https://tests-1305221371.cos.ap-nanjing.myqcloud.com/20210324203136.png)
+
+发现分别是7001和7002满足配置则集群成功
+
+然后修改eureka注册服务即可
+
+```yml
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true #是否将eureka注册写不写都是一样的但是建议将其注册
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/
+```

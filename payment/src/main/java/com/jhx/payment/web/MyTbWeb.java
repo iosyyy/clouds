@@ -34,7 +34,7 @@ public class MyTbWeb {
     }
 
     @GetMapping("/selectMyTb")
-    public ResultMap SelectMyTb(int mId){
+    public ResultMap SelectMyTb(Integer mId){
         log.info("select MyTb start..."+mId);
         MyTb myTb = myTbService.selectByPrimaryKey(mId);
         if (myTb==null){

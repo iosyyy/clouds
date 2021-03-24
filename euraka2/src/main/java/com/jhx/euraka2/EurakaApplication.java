@@ -1,18 +1,17 @@
-package com.jhx.coustomer;
+package com.jhx.euraka2;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
 
 /**
  * @author 靖鸿宣
  * @since 2021/3/24
  */
+@EnableEurekaServer
 @SpringBootApplication
-@EnableEurekaClient
-public class CoustomerApplication {
+public class EurakaApplication {
     public static void main(String[] args) {
-
-        SpringApplication.run(CoustomerApplication.class,args);
+        SpringApplication.run(EurakaApplication.class,args);
     }
 }

@@ -12,6 +12,8 @@
         <module>payment</module>
         <module>coustomer</module>
         <module>euraka</module>
+        <module>euraka2</module>
+        <module>payment2</module>
     </modules>
 
     <properties>

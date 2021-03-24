@@ -27,6 +27,7 @@ public class GetMyTb {
     }
     @GetMapping("/select")
     public ResultMap SelectMyTb(Integer mId){
+        System.out.println(mId);
         RestTemplate restTemplate = restTemplateBuilder.build();
         return restTemplate.getForObject(url+"selectMyTb",ResultMap.class,mId);
     }
