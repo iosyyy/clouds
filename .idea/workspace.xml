@@ -4,38 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="90dea7ef-c6a5-4e62-8da8-8ee1cb13d1a5" name="默认变更列表" comment="#init">
-      <change afterPath="$PROJECT_DIR$/coustomer/src/main/java/com/jhx/coustomer/po/ApplicationContextApi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/payment/src/main/java/com/jhx/payment/web/test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/paymentCopy/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/paymentCopy/src/main/java/com/jhx/payment/PaymentApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/paymentCopy/src/main/java/com/jhx/payment/dao/MyTbMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/paymentCopy/src/main/java/com/jhx/payment/po/MyTb.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/paymentCopy/src/main/java/com/jhx/payment/po/ResultMap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/paymentCopy/src/main/java/com/jhx/payment/service/MyTbService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/paymentCopy/src/main/java/com/jhx/payment/service/PaymentServiceImp/MyTbServiceImp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/paymentCopy/src/main/java/com/jhx/payment/web/MyTbWeb.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/paymentCopy/src/main/resources/Mapper/MyTbMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/paymentCopy/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/paymentCopy/src/main/resources/generatorConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test2/src/main/java/com/demo/Filter/config.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../untitled6/src/main/java/com/jhx/demo/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../untitled6/src/main/java/com/jhx/demo/change/changeAll.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coustomer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/coustomer/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coustomer/src/main/java/com/jhx/coustomer/web/GetMyTb.java" beforeDir="false" afterPath="$PROJECT_DIR$/coustomer/src/main/java/com/jhx/coustomer/web/GetMyTb.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment/src/main/java/com/jhx/payment/web/MyTbWeb.java" beforeDir="false" afterPath="$PROJECT_DIR$/payment/src/main/java/com/jhx/payment/web/MyTbWeb.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/payment/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/payment/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment/target/classes/com/jhx/payment/web/MyTbWeb.class" beforeDir="false" afterPath="$PROJECT_DIR$/payment/target/classes/com/jhx/payment/web/MyTbWeb.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/payment/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment/target/payment-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/payment/target/payment-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment2/src/main/java/com/jhx/payment2/PaymentApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/payment2/src/main/java/com/jhx/payment2/Payment2Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment2/src/main/java/com/jhx/payment2/service/CourseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/payment2/src/main/java/com/jhx/payment2/service/CourseService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment2/src/main/java/com/jhx/payment2/service/imp/CourseServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/payment2/src/main/java/com/jhx/payment2/service/imp/CourseServiceImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment2/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/payment2/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-    </list>
+    <list default="true" id="90dea7ef-c6a5-4e62-8da8-8ee1cb13d1a5" name="默认变更列表" comment="#init" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -273,6 +242,7 @@
       <workItem from="1616824403733" duration="8181000" />
       <workItem from="1616849681917" duration="240000" />
       <workItem from="1617070353767" duration="608000" />
+      <workItem from="1617073534676" duration="310000" />
     </task>
     <task id="LOCAL-00001" summary="#init">
       <created>1616583061757</created>
@@ -302,7 +272,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616596168156</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="#init">
+      <created>1617073593573</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1617073593573</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
