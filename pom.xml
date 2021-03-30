@@ -14,6 +14,7 @@
         <module>euraka</module>
         <module>euraka2</module>
         <module>payment2</module>
+        <module>paymentCopy</module>
     </modules>
 
     <properties>

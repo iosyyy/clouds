@@ -1,4 +1,5 @@
 com\jhx\payment\po\MyTb.class
+com\jhx\payment\web\test.class
 com\jhx\payment\PaymentApplication.class
 com\jhx\payment\dao\MyTbMapper.class
 com\jhx\payment\web\MyTbWeb.class

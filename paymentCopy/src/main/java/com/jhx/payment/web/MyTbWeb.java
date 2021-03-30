@@ -10,7 +10,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
-import java.util.Random;
 
 /**
  * @author 靖鸿宣
@@ -40,7 +39,6 @@ public class MyTbWeb {
 
     @GetMapping("/payment/selectMyTb")
     public ResultMap SelectMyTb(Integer mId){
-
         log.info("select MyTb start..."+mId);
         MyTb myTb = myTbService.selectByPrimaryKey(mId);
         if (myTb==null){

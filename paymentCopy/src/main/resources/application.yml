@@ -1,7 +1,6 @@
 server:
-  port: 8081
+  port: 8082
   servlet:
-    context-path: /payment2
     session:
       timeout: 60
 spring:
@@ -11,7 +10,7 @@ spring:
     username: root
     password: root
   application:
-    name: cloud-payment2-service
+    name: cloud-payment-service
 
 eureka:
   client:
@@ -19,9 +18,12 @@ eureka:
     fetch-registry: true #是否将eureka注册写不写都是一样的但是建议将其注册
     service-url:
       defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/
+  instance:
+    instance-id: paymentx
+    prefer-ip-address: true
 # mybatis相关
 mybatis:
   # 实体类包路径
-  type-aliases-package: com.wg.demo.po
+  type-aliases-package: com.jhx.payment.po
   # 扫描mapper映射文件
   mapper-locations: classpath:Mapper/*.xml

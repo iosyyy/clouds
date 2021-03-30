@@ -43,6 +43,24 @@ public class GetMyTb {
 > 3. `responseType`:和`getForObject`的`responseType`也一样.
 > 4. `uriVariables`就是`args`代表传到接口的参数
 
+也可以使用`@Bean`注册`RestTemplate`
+
+```java
+import org.springframework.cloud.client.loadbalancer.LoadBalanced;
+import org.springframework.context.annotation.Bean;
+import org.springframework.web.client.RestTemplate;
+
+@Configuration
+public class ApplicationContextApi {
+    @Bean
+    public RestTemplate getRestTemplate() {
+        return new RestTemplate();
+    }
+}
+    
+```
+推荐使用方法1,当然方法2在后面负载均衡的时候有作用.
+
 ## `eureka`
 
 **配置**:
@@ -131,7 +149,7 @@ public class GetMyTb {
    </project>
    ```
 
-注意的是这里的版本和jdk的版本,jdk的版本一定要在1.8不能太高
+注意的是这里的版本和`jdk`的版本,`jdk`的版本一定要在1.8不能太高
 
 3. application.java
 
@@ -152,7 +170,7 @@ public class GetMyTb {
 
 然后就可以顺利启动
 
-注意唯一也是最重要的问题需要设置jdk的版本为1.8
+注意唯一也是最重要的问题需要设置`jdk`的版本为1.8
 
 这里可以使用插件的方式如上面pom文件中的plugin,也可以通过idea的配置
 
@@ -174,7 +192,7 @@ public class GetMyTb {
 
 
 
-检查这里的jdk是否为有1.8版本
+检查这里的`jdk`是否为有1.8版本
 
 ![image-20210324103140386](https://tests-1305221371.cos.ap-nanjing.myqcloud.com/20210324103140.png)
 
@@ -599,3 +617,46 @@ eureka:
     service-url:
       defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/
 ```
+
+### 注册的集群
+
+1. 首先是保证两个集群的服务注册时使用相同的名字
+
+即`application.yml`中的此属性一致,注意`name`的值可以随意设定,由于集群的设定尽量保证两个服务的一致性方便后续开发,本机调试时记得更改端口号
+
+```yml
+spring:
+ application:
+  name: cloud-payment-service
+```
+
+然后在80端也就是浏览器端调用服务
+
+首先创建`RestTemplate`bean这里时spring的知识点,@Configuration和Beans.xml一样,@Bean和bean标签一致
+
+```java
+@Configuration
+public class ApplicationContextApi {
+
+    @Bean
+    @LoadBalanced
+    public RestTemplate getRestTemplate(){
+        return new RestTemplate();
+    }
+}
+```
+
+>  值得注意的是这里不能使用`springboot`有的自动注入的`RestTemplateBuilder`因为无法使用`@LoadBalanced`标签下面会讲解这个标签的作用.
+
+**`@LoadBalanced`**
+
+这个代表`RestTemplate`的负载均衡(负载均衡的意思就是因为已经有集群服务了所以要满足浏览器端不再只使用一个服务,只使用一个服务那集群的意义就没有了.使用负载均衡后发现服务会被随机访问,减轻了服务端的压力),使用后会加载一个`Filter`然后更改上面说到的`spring-application-name`变成`ip:config`的格式,然后正常访问即可.
+
+然后只需要改变`url="http://CLOUD-PAYMENT-SERVICE/ "`(这里的CLOUD-PAYMENT-SERVICE为你上面配置的`spring-application-name`会自动的转换为`ip:cnfig`的格式).
+
+其他操作不变即可完成服务注册的集群
+
+
+
+
+
