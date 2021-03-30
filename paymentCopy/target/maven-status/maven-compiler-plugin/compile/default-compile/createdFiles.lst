@@ -1,0 +1,7 @@
+com\jhx\payment\po\MyTb.class
+com\jhx\payment\PaymentApplication.class
+com\jhx\payment\dao\MyTbMapper.class
+com\jhx\payment\web\MyTbWeb.class
+com\jhx\payment\service\PaymentServiceImp\MyTbServiceImp.class
+com\jhx\payment\service\MyTbService.class
+com\jhx\payment\po\ResultMap.class

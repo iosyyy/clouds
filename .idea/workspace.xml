@@ -4,7 +4,38 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="90dea7ef-c6a5-4e62-8da8-8ee1cb13d1a5" name="默认变更列表" comment="#init" />
+    <list default="true" id="90dea7ef-c6a5-4e62-8da8-8ee1cb13d1a5" name="默认变更列表" comment="#init">
+      <change afterPath="$PROJECT_DIR$/coustomer/src/main/java/com/jhx/coustomer/po/ApplicationContextApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment/src/main/java/com/jhx/payment/web/test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/paymentCopy/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/paymentCopy/src/main/java/com/jhx/payment/PaymentApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/paymentCopy/src/main/java/com/jhx/payment/dao/MyTbMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/paymentCopy/src/main/java/com/jhx/payment/po/MyTb.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/paymentCopy/src/main/java/com/jhx/payment/po/ResultMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/paymentCopy/src/main/java/com/jhx/payment/service/MyTbService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/paymentCopy/src/main/java/com/jhx/payment/service/PaymentServiceImp/MyTbServiceImp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/paymentCopy/src/main/java/com/jhx/payment/web/MyTbWeb.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/paymentCopy/src/main/resources/Mapper/MyTbMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/paymentCopy/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/paymentCopy/src/main/resources/generatorConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test2/src/main/java/com/demo/Filter/config.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled6/src/main/java/com/jhx/demo/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled6/src/main/java/com/jhx/demo/change/changeAll.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coustomer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/coustomer/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coustomer/src/main/java/com/jhx/coustomer/web/GetMyTb.java" beforeDir="false" afterPath="$PROJECT_DIR$/coustomer/src/main/java/com/jhx/coustomer/web/GetMyTb.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment/src/main/java/com/jhx/payment/web/MyTbWeb.java" beforeDir="false" afterPath="$PROJECT_DIR$/payment/src/main/java/com/jhx/payment/web/MyTbWeb.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/payment/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/payment/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment/target/classes/com/jhx/payment/web/MyTbWeb.class" beforeDir="false" afterPath="$PROJECT_DIR$/payment/target/classes/com/jhx/payment/web/MyTbWeb.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/payment/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment/target/payment-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/payment/target/payment-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment2/src/main/java/com/jhx/payment2/PaymentApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/payment2/src/main/java/com/jhx/payment2/Payment2Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment2/src/main/java/com/jhx/payment2/service/CourseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/payment2/src/main/java/com/jhx/payment2/service/CourseService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment2/src/main/java/com/jhx/payment2/service/imp/CourseServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/payment2/src/main/java/com/jhx/payment2/service/imp/CourseServiceImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment2/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/payment2/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,16 +48,24 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="pom" />
-        <option value="generatorConfig" />
         <option value="Interface" />
         <option value="application" />
-        <option value="Class" />
         <option value="applicationEureka" />
+        <option value="generatorConfig" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -62,6 +101,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
@@ -76,7 +116,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="问题" />
+    <property name="project.structure.last.edited" value="模块" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="fileTemplates" />
@@ -87,6 +127,9 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Test\test\coustomer\src\main\java\com\jhx\coustomer\po" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.jhx.payment2.po" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="configurationTypes">
@@ -95,20 +138,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.EurakaApplication">
-    <configuration name="EurakaApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.jhx.euraka.EurakaApplication" />
-      <module name="euraka" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.jhx.euraka.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.test.Test">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -120,33 +150,57 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CoustomerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="test.Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="payment" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jhx.payment.web.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.jhx.payment.web" />
+      <option name="MAIN_CLASS_NAME" value="com.jhx.payment.web.test" />
+      <option name="METHOD_NAME" value="Test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CoustomerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="coustomer" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.jhx.coustomer.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.jhx.coustomer.CoustomerApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EurakaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="euraka" />
+    <configuration name="EurakaApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="euraka2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.jhx.euraka.*" />
+          <option name="PATTERN" value="com.jhx.euraka2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.jhx.euraka.EurakaApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.jhx.euraka2.EurakaApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PaymentApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="Payment2Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="payment2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jhx.payment2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.jhx.payment2.Payment2Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PaymentApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="payment" />
       <extension name="coverage">
         <pattern>
@@ -159,12 +213,35 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PaymentApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="paymentCopy" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jhx.payment.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.jhx.payment.PaymentApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.test.Test" />
+      <item itemvalue="Spring Boot.CoustomerApplication" />
+      <item itemvalue="Spring Boot.EurakaApplication (1)" />
+      <item itemvalue="Spring Boot.Payment2Application" />
+      <item itemvalue="Spring Boot.PaymentApplication" />
+      <item itemvalue="Spring Boot.PaymentApplication (1)" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.EurakaApplication" />
+        <item itemvalue="JUnit.test.Test" />
+        <item itemvalue="Spring Boot.PaymentApplication (1)" />
         <item itemvalue="Spring Boot.PaymentApplication" />
-        <item itemvalue="Spring Boot.CoustomerApplication" />
-        <item itemvalue="应用程序.EurakaApplication" />
+        <item itemvalue="Spring Boot.Payment2Application" />
+        <item itemvalue="Spring Boot.EurakaApplication (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -186,7 +263,16 @@
       <workItem from="1616564953846" duration="1537000" />
       <workItem from="1616567120089" duration="357000" />
       <workItem from="1616579663409" duration="353000" />
-      <workItem from="1616582468226" duration="855000" />
+      <workItem from="1616582468226" duration="14549000" />
+      <workItem from="1616635533918" duration="671000" />
+      <workItem from="1616637973784" duration="1365000" />
+      <workItem from="1616651208547" duration="490000" />
+      <workItem from="1616655135640" duration="1352000" />
+      <workItem from="1616767919138" duration="44000" />
+      <workItem from="1616768050398" duration="639000" />
+      <workItem from="1616824403733" duration="8181000" />
+      <workItem from="1616849681917" duration="240000" />
+      <workItem from="1617070353767" duration="608000" />
     </task>
     <task id="LOCAL-00001" summary="#init">
       <created>1616583061757</created>
@@ -202,7 +288,21 @@
       <option name="project" value="LOCAL" />
       <updated>1616583159706</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="#init">
+      <created>1616585234632</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1616585234632</updated>
+    </task>
+    <task id="LOCAL-00004" summary="#init">
+      <created>1616596168156</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1616596168156</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -221,6 +321,7 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="#init" />
     <option name="LAST_COMMIT_MESSAGE" value="#init" />
   </component>

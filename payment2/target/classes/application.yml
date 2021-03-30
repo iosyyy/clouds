@@ -1,0 +1,27 @@
+server:
+  port: 8081
+  servlet:
+    context-path: /payment2
+    session:
+      timeout: 60
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/my_db?useUnicode=true&characterEncoding=utf-8&useSSL=true&serverTimezone=UTC
+    username: root
+    password: root
+  application:
+    name: cloud-payment2-service
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true #是否将eureka注册写不写都是一样的但是建议将其注册
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/
+# mybatis相关
+mybatis:
+  # 实体类包路径
+  type-aliases-package: com.wg.demo.po
+  # 扫描mapper映射文件
+  mapper-locations: classpath:Mapper/*.xml

@@ -1,0 +1,15 @@
+server:
+  port: 80
+  servlet:
+    context-path: /coustomer
+
+spring:
+  application:
+    name: cloud-coustomer-service
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true #是否将eureka注册写不写都是一样的但是建议将其注册
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/

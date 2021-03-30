@@ -11,9 +11,12 @@
         <module name="payment" />
         <module name="euraka" />
         <module name="coustomer" />
+        <module name="paymentCopy" />
+        <module name="euraka2" />
+        <module name="payment2" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="8" />
+    <bytecodeTargetLevel target="14" />
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
