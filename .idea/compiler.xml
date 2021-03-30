@@ -8,12 +8,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="coustomer" />
+        <module name="payment2" />
+        <module name="payment3" />
         <module name="payment" />
         <module name="euraka" />
-        <module name="coustomer" />
         <module name="paymentCopy" />
         <module name="euraka2" />
-        <module name="payment2" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="14" />

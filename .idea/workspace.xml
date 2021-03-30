@@ -4,7 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="90dea7ef-c6a5-4e62-8da8-8ee1cb13d1a5" name="默认变更列表" comment="#init" />
+    <list default="true" id="90dea7ef-c6a5-4e62-8da8-8ee1cb13d1a5" name="默认变更列表" comment="#init">
+      <change afterPath="$PROJECT_DIR$/payment3/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment3/src/main/java/com/demo/test/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment3/src/main/java/com/demo/test/web/WebCon.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment3/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/payment/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment/src/main/java/com/jhx/payment/PaymentApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/payment/src/main/java/com/jhx/payment/PaymentApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment/src/main/java/com/jhx/payment/web/MyTbWeb.java" beforeDir="false" afterPath="$PROJECT_DIR$/payment/src/main/java/com/jhx/payment/web/MyTbWeb.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment/target/classes/com/jhx/payment/PaymentApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/payment/target/classes/com/jhx/payment/PaymentApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment/target/classes/com/jhx/payment/web/MyTbWeb.class" beforeDir="false" afterPath="$PROJECT_DIR$/payment/target/classes/com/jhx/payment/web/MyTbWeb.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment/target/classes/com/jhx/payment/web/test.class" beforeDir="false" afterPath="$PROJECT_DIR$/payment/target/classes/com/jhx/payment/web/test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment/target/payment-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/payment/target/payment-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment2/target/payment2-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/payment2/target/payment2-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/paymentCopy/target/paymentCopy-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/paymentCopy/target/paymentCopy-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -81,8 +96,11 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/coustomer/src/main/java/com/jhx/coustomer/po" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="模块" />
@@ -107,7 +125,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.test.Test">
+  <component name="RunManager" selected="Spring Boot.Application">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -119,18 +137,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="test.Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="payment" />
+    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="payment3" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.jhx.payment.web.*" />
+          <option name="PATTERN" value="com.demo.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.jhx.payment.web" />
-      <option name="MAIN_CLASS_NAME" value="com.jhx.payment.web.test" />
-      <option name="METHOD_NAME" value="Test" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.demo.test.Application" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -152,6 +167,13 @@
         </pattern>
       </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.jhx.euraka2.EurakaApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EurakaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="euraka" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.jhx.euraka.EurakaApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -197,16 +219,17 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.test.Test" />
       <item itemvalue="Spring Boot.CoustomerApplication" />
+      <item itemvalue="Spring Boot.EurakaApplication" />
       <item itemvalue="Spring Boot.EurakaApplication (1)" />
       <item itemvalue="Spring Boot.Payment2Application" />
       <item itemvalue="Spring Boot.PaymentApplication" />
       <item itemvalue="Spring Boot.PaymentApplication (1)" />
+      <item itemvalue="Spring Boot.Application" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.test.Test" />
+        <item itemvalue="Spring Boot.Application" />
         <item itemvalue="Spring Boot.PaymentApplication (1)" />
         <item itemvalue="Spring Boot.PaymentApplication" />
         <item itemvalue="Spring Boot.Payment2Application" />
@@ -242,7 +265,10 @@
       <workItem from="1616824403733" duration="8181000" />
       <workItem from="1616849681917" duration="240000" />
       <workItem from="1617070353767" duration="608000" />
-      <workItem from="1617073534676" duration="310000" />
+      <workItem from="1617073534676" duration="2815000" />
+      <workItem from="1617097917765" duration="593000" />
+      <workItem from="1617101160092" duration="125000" />
+      <workItem from="1617108543062" duration="925000" />
     </task>
     <task id="LOCAL-00001" summary="#init">
       <created>1616583061757</created>
