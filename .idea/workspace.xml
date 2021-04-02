@@ -5,18 +5,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="90dea7ef-c6a5-4e62-8da8-8ee1cb13d1a5" name="默认变更列表" comment="#init">
-      <change afterPath="$PROJECT_DIR$/payment3/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/payment3/src/main/java/com/demo/test/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/payment3/src/main/java/com/demo/test/web/WebCon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/payment3/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/payment/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment/src/main/java/com/jhx/payment/PaymentApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/payment/src/main/java/com/jhx/payment/PaymentApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coustomer/src/main/java/com/jhx/test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cusfeign/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cusfeign/src/main/java/com/fegin/demo/FeginApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cusfeign/src/main/java/com/fegin/demo/config/TestFeignLevel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cusfeign/src/main/java/com/fegin/demo/po/ResultMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cusfeign/src/main/java/com/fegin/demo/service/FeginService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cusfeign/src/main/java/com/fegin/demo/web/WebTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cusfeign/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment4/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment4/src/main/java/com/demo/payment4/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment4/src/main/java/com/demo/payment4/web/WebCon.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment4/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/paymentHystrix/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/paymentHystrix/src/main/java/com/hystrix/demo/HystrixApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/paymentHystrix/src/main/java/com/hystrix/demo/service/TestServices.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/paymentHystrix/src/main/java/com/hystrix/demo/web/WebTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/paymentHystrix/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coustomer/src/main/java/com/jhx/coustomer/CoustomerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/coustomer/src/main/java/com/jhx/coustomer/CoustomerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coustomer/target/classes/com/jhx/coustomer/CoustomerApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/coustomer/target/classes/com/jhx/coustomer/CoustomerApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coustomer/target/coustomer-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/coustomer/target/coustomer-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coustomer/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/coustomer/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/payment/src/main/java/com/jhx/payment/web/MyTbWeb.java" beforeDir="false" afterPath="$PROJECT_DIR$/payment/src/main/java/com/jhx/payment/web/MyTbWeb.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment/target/classes/com/jhx/payment/PaymentApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/payment/target/classes/com/jhx/payment/PaymentApplication.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/payment/target/classes/com/jhx/payment/web/MyTbWeb.class" beforeDir="false" afterPath="$PROJECT_DIR$/payment/target/classes/com/jhx/payment/web/MyTbWeb.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment/target/classes/com/jhx/payment/web/test.class" beforeDir="false" afterPath="$PROJECT_DIR$/payment/target/classes/com/jhx/payment/web/test.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/payment/target/payment-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/payment/target/payment-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment2/src/main/java/com/jhx/payment2/web/CourseWeb.java" beforeDir="false" afterPath="$PROJECT_DIR$/payment2/src/main/java/com/jhx/payment2/web/CourseWeb.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/payment2/target/payment2-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/payment2/target/payment2-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment3/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/payment3/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment3/target/payment3-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/payment3/target/payment3-1.0-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/paymentCopy/target/paymentCopy-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/paymentCopy/target/paymentCopy-1.0-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
@@ -106,7 +123,7 @@
     <property name="project.structure.last.edited" value="模块" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="fileTemplates" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
     <property name="typescript.add.unambiguous.imports.on.the.fly" value="true" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -115,8 +132,39 @@
       <recent name="D:\Test\test\coustomer\src\main\java\com\jhx\coustomer\po" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.fegin.demo.po" />
+      <recent name="com.demo.payment4.web" />
       <recent name="com.jhx.payment2.po" />
     </key>
+  </component>
+  <component name="RestClientSettings">
+    <option name="REQUEST_HISTORY">
+      <list>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost/payment/selectMyTb" />
+          <option name="urlPath" value="" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost/payment/selectMyTb" />
+          <option name="urlPath" value="" />
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="mId" />
+                <option name="value" value="1500" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+      </list>
+    </option>
   </component>
   <component name="RunDashboard">
     <option name="configurationTypes">
@@ -125,30 +173,22 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.Application">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+  <component name="RunManager" selected="Spring Boot.HystrixApplication">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="payment3" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.demo.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.demo.test.Application" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="generated-requests#38" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="38" runType="运行单个请求">
+      <method v="2" />
     </configuration>
     <configuration name="CoustomerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="coustomer" />
@@ -158,14 +198,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EurakaApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="EurakaApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="euraka2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.jhx.euraka2.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.jhx.euraka2.EurakaApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -178,15 +212,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Payment2Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="payment2" />
+    <configuration name="FeginApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="cusfeign" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.jhx.payment2.*" />
+          <option name="PATTERN" value="com.fegin.demo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.jhx.payment2.Payment2Application" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.fegin.demo.FeginApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HystrixApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="paymentHystrix" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hystrix.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.hystrix.demo.HystrixApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -219,21 +266,22 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="HTTP 请求.generated-requests#38" />
       <item itemvalue="Spring Boot.CoustomerApplication" />
       <item itemvalue="Spring Boot.EurakaApplication" />
       <item itemvalue="Spring Boot.EurakaApplication (1)" />
-      <item itemvalue="Spring Boot.Payment2Application" />
       <item itemvalue="Spring Boot.PaymentApplication" />
       <item itemvalue="Spring Boot.PaymentApplication (1)" />
-      <item itemvalue="Spring Boot.Application" />
+      <item itemvalue="Spring Boot.FeginApplication" />
+      <item itemvalue="Spring Boot.HystrixApplication" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.Application" />
+        <item itemvalue="Spring Boot.HystrixApplication" />
+        <item itemvalue="Spring Boot.FeginApplication" />
         <item itemvalue="Spring Boot.PaymentApplication (1)" />
         <item itemvalue="Spring Boot.PaymentApplication" />
-        <item itemvalue="Spring Boot.Payment2Application" />
-        <item itemvalue="Spring Boot.EurakaApplication (1)" />
+        <item itemvalue="HTTP 请求.generated-requests#38" />
       </list>
     </recent_temporary>
   </component>
@@ -268,7 +316,14 @@
       <workItem from="1617073534676" duration="2815000" />
       <workItem from="1617097917765" duration="593000" />
       <workItem from="1617101160092" duration="125000" />
-      <workItem from="1617108543062" duration="925000" />
+      <workItem from="1617108543062" duration="1699000" />
+      <workItem from="1617111785634" duration="314000" />
+      <workItem from="1617112144270" duration="486000" />
+      <workItem from="1617187073111" duration="3006000" />
+      <workItem from="1617274785792" duration="7681000" />
+      <workItem from="1617331676336" duration="3941000" />
+      <workItem from="1617339487835" duration="1547000" />
+      <workItem from="1617346322505" duration="803000" />
     </task>
     <task id="LOCAL-00001" summary="#init">
       <created>1616583061757</created>

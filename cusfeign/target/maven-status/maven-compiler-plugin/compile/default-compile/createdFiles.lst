@@ -1,0 +1,5 @@
+com\fegin\demo\web\WebTest.class
+com\fegin\demo\config\TestFeignLevel.class
+com\fegin\demo\service\FeginService.class
+com\fegin\demo\po\ResultMap.class
+com\fegin\demo\FeginApplication.class

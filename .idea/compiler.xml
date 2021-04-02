@@ -9,12 +9,15 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="coustomer" />
+        <module name="payment4" />
         <module name="payment2" />
         <module name="payment3" />
+        <module name="cusfeign" />
         <module name="payment" />
         <module name="euraka" />
         <module name="paymentCopy" />
         <module name="euraka2" />
+        <module name="paymentHystrix" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="14" />

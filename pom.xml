@@ -16,6 +16,9 @@
         <module>payment2</module>
         <module>paymentCopy</module>
         <module>payment3</module>
+        <module>payment4</module>
+        <module>cusfeign</module>
+        <module>paymentHystrix</module>
     </modules>
 
     <properties>

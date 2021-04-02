@@ -656,7 +656,279 @@ public class ApplicationContextApi {
 
 其他操作不变即可完成服务注册的集群
 
+## `zookeeper`
+
+首先安装zookeeper
+
+1. 安装jvm
+
+   直接使用linux命令安装即可
+
+   ```cmd
+    deb jdk-version
+   ```
+
+2. 然后下载zookeeper
+
+   http://mirror.bit.edu.cn/apache/zookeeper/zookeeper-3.6.2/apache-zookeeper-3.6.2-bin.tar.gz
+
+   下载后传输到`linux`服务器上然后使用`tar -zxvf apache-zookeeper-3.6.2-bin.tar.gz`
+
+   然后使用`cd apache-zookeeper-3.6.2-bin`
+
+   再`cd conf`
+
+   然后使用`cp zoo_sample.cfg zoo.fig`
+
+   然后修改zoo.fig
+
+   `vim zoo.fig`
+
+   输入:w开始写入文件
+
+   ![img](https://img-blog.csdn.net/20160920231956375?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQv/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center)
+
+   更改如下即可
+
+   使用:wq保存
+
+   然后打开bin目录运行./zkServer.sh即可
+
+`application.yml`
+
+```yml
+server:
+  port: 8084
+spring:
+  application:
+    name: cloud-provider-8084
+  cloud:
+    zookeeper:
+      connect-string: 8.136.225.205:2181 #zookeeper的运行ip和环境
+```
+
+## `fegin`
+
+首先是`fegin`的作用他是类似于`mybatis`对我们的接口进行了一定程度上的封装,让我们可以直接通过方法调用接口,而不用通过`HttpClient`等请求接口(也就是把这一过程封装了).
+
+使用`fegin`
+
+1. 首先配置pom文件
+
+   ```xml
+   <?xml version="1.0" encoding="UTF-8"?>
+   <project xmlns="http://maven.apache.org/POM/4.0.0"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+       <parent>
+           <artifactId>test</artifactId>
+           <groupId>org.example</groupId>
+           <version>1.0-SNAPSHOT</version>
+       </parent>
+       <modelVersion>4.0.0</modelVersion>
+   
+       <artifactId>cusfeign</artifactId>
+   
+       <properties>
+           <maven.compiler.source>14</maven.compiler.source>
+           <maven.compiler.target>14</maven.compiler.target>
+       </properties>
+   <dependencies>
+       <dependency>
+           <groupId>org.springframework.boot</groupId>
+           <artifactId>spring-boot-actuator</artifactId>
+       </dependency>
+       <dependency>
+           <groupId>org.springframework.boot</groupId>
+           <artifactId>spring-boot-starter-web</artifactId>
+       </dependency>
+       <dependency>
+           <groupId>org.springframework.cloud</groupId>
+           <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
+       </dependency>
+       <dependency>
+           <groupId>org.springframework.cloud</groupId>
+           <artifactId>spring-cloud-starter-openfeign</artifactId>
+       </dependency>
+       <dependency>
+           <groupId>org.projectlombok</groupId>
+           <artifactId>lombok</artifactId>
+       </dependency>
+   </dependencies>
+   
+       <build>
+           <plugins>
+               <plugin>
+                   <artifactId>maven-compiler-plugin</artifactId>
+                   <configuration> <!--让编译器使用本地的13版本jdk-->
+                       <source>14</source>
+                       <target>14</target>
+                   </configuration>
+               </plugin>
+           </plugins>
+       </build>
+   </project>
+   ```
+
+2. 然后配置`applciation.yml`文件
+
+   ```yml
+   server:
+     port: 80
+   spring:
+     application:
+       name: cusfeign-80
+   eureka:
+     client:
+       register-with-eureka: false
+       service-url:
+         defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/
+   ```
+
+3. 然后在启动类中添加@EnableFeginClients注解让他能启动Fegin的服务
+
+   ```java
+   @SpringBootApplication
+   @EnableFeignClients
+   public class FeginApplication {
+   
+       public static void main(String[] args) {
+           SpringApplication.run(FeginApplication.class, args);
+       }
+   
+   }
+   ```
+
+4. 然后在service层配置使用`@FeginClient`注解配置
+
+   ```java
+   @FeignClient("CLOUD-PAYMENT-SERVICE")
+   public interface FeginService {
+       @GetMapping("/payment/selectMyTb")
+       public ResultMap SelectMyTb(@RequestParam("mId") Integer mId);
+   }
+   
+   ```
+
+   值得说明的是@FeignClient中间的值代表你服务的名字下面的方法代表的你要实现的接口的名字.然后记得传参记得使用@RequestParm和@RequestBody等注解,因为这东西不支持这类东西的自动注入可能会抛一个异常.
+
+   ```java
+   org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported
+           at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.handleNoMatch(RequestMappingInfoHandlerMapping.java:201)
+           at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lookupHandlerMethod(AbstractHandlerMethodMapping.java:420)
+           at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:366)
+           at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:66)
+           at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:404)
+           at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1233)
+           at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1016)
+           at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+           at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+           at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+           at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+           at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+           at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+           at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+           at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+           at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+           at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+           at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+           at com.github.xiaoymin.knife4j.spring.filter.ProductionSecurityFilter.doFilter(ProductionSecurityFilter.java:53)
+           at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+           at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+           at com.github.xiaoymin.knife4j.spring.filter.SecurityBasicAuthFilter.doFilter(SecurityBasicAuthFilter.java:90)
+           at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+           at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+           at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+           at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+           at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+           at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+           at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+           at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+           at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+           at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+           at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:94)
+           at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+           at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+           at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+           at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+           at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+           at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+           at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+           at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+           at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+           at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+           at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+           at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+           at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+           at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+           at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+           at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+           at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860)
+           at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1598)
+           at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+           at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+           at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+           at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+           at java.lang.Thread.run(Thread.java:748)
+   ```
+
+5. 然后直接调用即可
+
+   ```java
+   @RestController
+   @Slf4j
+   public class WebTest {
+       @Resource
+       FeginService service;
+   
+       @GetMapping("/cou/selectMyTb")
+       public ResultMap SelectMyTb(@RequestParam("mId") Integer mId){
+           return service.SelectMyTb(mId);
+       }
+   }
+   ```
 
 
+## `Hystrix`
 
+1. 在pom.xml中添加
+
+   ```xml
+   <dependency>
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
+   </dependency>
+   ```
+
+2. main中添加
+
+   ```java
+   @EnableHystrix
+   ```
+
+3. 在方法中使用在`@HystrixCommand`标记如果发生异常则会跳到`FailBackFail`方法
+
+   ```java
+   @Service
+   public class TestServices {
+       public String getIt(Integer id){
+           return "success"+Thread.currentThread().getName()+" "+id;
+       }
+       @HystrixCommand(fallbackMethod =  "FallBackFail",commandProperties = {
+               @HystrixProperty(name = "execution.isolation.thread.timeoutInMilliseconds",value="3000")
+       })
+       public String Timeout(Integer id){
+           int time=1/0;
+           try {
+               TimeUnit.SECONDS.sleep(time);
+           } catch (InterruptedException e) {
+               e.printStackTrace();
+           }
+           return "timeout"+id+" "+Thread.currentThread().getName();
+       }
+       public String FallBackFail(Integer id){
+           return "running fail service callback fail"+" "+id;
+       }
+   }
+   ```
 

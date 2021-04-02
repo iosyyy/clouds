@@ -9,6 +9,7 @@ import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
@@ -44,7 +45,7 @@ public class MyTbWeb {
     }
 
     @GetMapping("/payment/selectMyTb")
-    public ResultMap SelectMyTb(Integer mId) {
+    public ResultMap SelectMyTb(@RequestParam("mId") Integer mId) {
 
         log.info("select MyTb start..." + mId);
         MyTb myTb = myTbService.selectByPrimaryKey(mId);

@@ -1,0 +1,3 @@
+com\hystrix\demo\HystrixApplication.class
+com\hystrix\demo\service\TestServices.class
+com\hystrix\demo\web\WebTest.class
