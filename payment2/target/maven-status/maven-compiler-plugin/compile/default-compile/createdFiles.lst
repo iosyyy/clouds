@@ -1,7 +1,0 @@
-com\jhx\payment2\dao\CourseMapper.class
-com\jhx\payment2\po\Course.class
-com\jhx\payment2\service\CourseService.class
-com\jhx\payment2\web\CourseWeb.class
-com\jhx\payment2\Payment2Application.class
-com\jhx\payment2\po\ResultMap.class
-com\jhx\payment2\service\imp\CourseServiceImp.class

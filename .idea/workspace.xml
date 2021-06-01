@@ -5,36 +5,165 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="90dea7ef-c6a5-4e62-8da8-8ee1cb13d1a5" name="默认变更列表" comment="#init">
-      <change afterPath="$PROJECT_DIR$/coustomer/src/main/java/com/jhx/test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cusfeign/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cusfeign/src/main/java/com/fegin/demo/FeginApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cusfeign/src/main/java/com/fegin/demo/config/TestFeignLevel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cusfeign/src/main/java/com/fegin/demo/po/ResultMap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cusfeign/src/main/java/com/fegin/demo/service/FeginService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cusfeign/src/main/java/com/fegin/demo/web/WebTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cusfeign/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/payment4/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/payment4/src/main/java/com/demo/payment4/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/payment4/src/main/java/com/demo/payment4/web/WebCon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/payment4/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/paymentHystrix/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/paymentHystrix/src/main/java/com/hystrix/demo/HystrixApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/paymentHystrix/src/main/java/com/hystrix/demo/service/TestServices.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/paymentHystrix/src/main/java/com/hystrix/demo/web/WebTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/paymentHystrix/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BotServer/BotServer.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BotServer/src/main/resources/simbot.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/demo.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../markdown/.idea/markdown.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../markdown/my-db/src/main/java/com/jhx/demo/Filter/WebFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../markdown/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codestream.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries-with-intellij-classes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GateWayTest/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GateWayTest/src/main/java/com/gateway/demoTwo/GatewayApplciation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GateWayTest/src/main/java/com/gateway/demoTwo/test/TestIt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GateWayTest/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aliConfig/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aliConfig/src/main/java/com/demo/config/NacosConfigApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aliConfig/src/main/java/com/demo/config/web/WebTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aliConfig/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aliConfig/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aliOrders/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aliOrders/src/main/java/com/demo/orderalibaba/AliOrderApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aliOrders/src/main/java/com/demo/orderalibaba/config/WebConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aliOrders/src/main/java/com/demo/orderalibaba/web/WebTet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aliOrders/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/alipaayment/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/alipaayment/src/main/java/com/demo/alibaba/AlibabaApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/alipaayment/src/main/java/com/demo/alibaba/web/WebTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/alipaayment/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/alipayment/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/alipayment/src/main/java/com/demo/alipay2/AlibabaApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/alipayment/src/main/java/com/demo/alipay2/web/WebTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/alipayment/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/configClient/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/configClient/src/main/java/com/config/client/ConfigClientApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/configClient/src/main/java/com/config/client/web/WebTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/configClient/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/configa/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/configa/src/main/java/com/demo/config/ConfigApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/configa/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cusfeign/src/main/java/com/fegin/demo/service/Imp/FeginServiceImp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test2/test2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled/.idea/untitled.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled3/order/src/main/java/com/jhx/order/po/Course.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled3/order/src/main/java/com/jhx/order/po/MyTb.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled3/order/src/main/java/com/jhx/order/po/ResultMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled3/payment/src/main/java/com/jhx/apiPo/po/Course.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled4/eurekaserver/eurekaserver.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled6/untitled6.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled7/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coustomer/src/main/java/com/jhx/coustomer/CoustomerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/coustomer/src/main/java/com/jhx/coustomer/CoustomerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coustomer/target/classes/com/jhx/coustomer/CoustomerApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/coustomer/target/classes/com/jhx/coustomer/CoustomerApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coustomer/target/coustomer-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/coustomer/target/coustomer-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coustomer/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/coustomer/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment/src/main/java/com/jhx/payment/web/MyTbWeb.java" beforeDir="false" afterPath="$PROJECT_DIR$/payment/src/main/java/com/jhx/payment/web/MyTbWeb.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment/target/classes/com/jhx/payment/web/MyTbWeb.class" beforeDir="false" afterPath="$PROJECT_DIR$/payment/target/classes/com/jhx/payment/web/MyTbWeb.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment/target/payment-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/payment/target/payment-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment2/src/main/java/com/jhx/payment2/web/CourseWeb.java" beforeDir="false" afterPath="$PROJECT_DIR$/payment2/src/main/java/com/jhx/payment2/web/CourseWeb.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment2/target/payment2-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/payment2/target/payment2-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment3/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/payment3/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment3/target/payment3-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/payment3/target/payment3-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/paymentCopy/target/paymentCopy-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/paymentCopy/target/paymentCopy-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coustomer/target/coustomer-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/coustomer/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/coustomer/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/coustomer/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/coustomer/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cusfeign/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cusfeign/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cusfeign/src/main/java/com/fegin/demo/service/FeginService.java" beforeDir="false" afterPath="$PROJECT_DIR$/cusfeign/src/main/java/com/fegin/demo/service/FeginService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cusfeign/src/main/java/com/fegin/demo/web/WebTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/cusfeign/src/main/java/com/fegin/demo/web/WebTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cusfeign/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cusfeign/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cusfeign/target/classes/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cusfeign/target/classes/com/fegin/demo/FeginApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cusfeign/target/classes/com/fegin/demo/config/TestFeignLevel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cusfeign/target/classes/com/fegin/demo/po/ResultMap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cusfeign/target/classes/com/fegin/demo/service/FeginService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cusfeign/target/classes/com/fegin/demo/web/WebTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cusfeign/target/cusfeign-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cusfeign/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cusfeign/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cusfeign/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cusfeign/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/euraka/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/euraka/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/euraka/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/euraka/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/euraka/target/euraka-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/euraka/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/euraka/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/euraka/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/euraka/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/euraka2/target/classes/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/euraka2/target/classes/com/jhx/euraka2/EurakaApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/euraka2/target/euraka2-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/euraka2/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/euraka2/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/euraka2/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/euraka2/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment/target/classes/Mapper/MyTbMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment/target/classes/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment/target/classes/com/jhx/payment/PaymentApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment/target/classes/com/jhx/payment/dao/MyTbMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment/target/classes/com/jhx/payment/po/MyTb.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment/target/classes/com/jhx/payment/po/ResultMap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment/target/classes/com/jhx/payment/service/MyTbService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment/target/classes/com/jhx/payment/service/PaymentServiceImp/MyTbServiceImp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment/target/classes/com/jhx/payment/web/MyTbWeb.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment/target/classes/com/jhx/payment/web/test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment/target/classes/generatorConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment/target/payment-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment2/target/classes/Mapper/CourseMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment2/target/classes/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment2/target/classes/com/jhx/payment2/Payment2Application.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment2/target/classes/com/jhx/payment2/dao/CourseMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment2/target/classes/com/jhx/payment2/po/Course.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment2/target/classes/com/jhx/payment2/po/ResultMap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment2/target/classes/com/jhx/payment2/service/CourseService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment2/target/classes/com/jhx/payment2/service/imp/CourseServiceImp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment2/target/classes/com/jhx/payment2/web/CourseWeb.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment2/target/classes/generatorConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment2/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment2/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment2/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment2/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment2/target/payment2-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment3/target/classes/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment3/target/classes/com/demo/test/Application.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment3/target/classes/com/demo/test/web/WebCon.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment3/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment3/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment3/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment3/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment3/target/payment3-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment4/target/classes/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment4/target/classes/com/demo/payment4/Application.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment4/target/classes/com/demo/payment4/web/WebCon.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment4/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment4/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment4/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment4/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment4/target/payment4-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/paymentCopy/target/classes/Mapper/MyTbMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/paymentCopy/target/classes/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/paymentCopy/target/classes/com/jhx/payment/PaymentApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/paymentCopy/target/classes/com/jhx/payment/dao/MyTbMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/paymentCopy/target/classes/com/jhx/payment/po/MyTb.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/paymentCopy/target/classes/com/jhx/payment/po/ResultMap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/paymentCopy/target/classes/com/jhx/payment/service/MyTbService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/paymentCopy/target/classes/com/jhx/payment/service/PaymentServiceImp/MyTbServiceImp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/paymentCopy/target/classes/com/jhx/payment/web/MyTbWeb.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/paymentCopy/target/classes/generatorConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/paymentCopy/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/paymentCopy/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/paymentCopy/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/paymentCopy/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/paymentCopy/target/paymentCopy-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/paymentHystrix/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/paymentHystrix/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/paymentHystrix/target/classes/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/paymentHystrix/target/classes/com/hystrix/demo/HystrixApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/paymentHystrix/target/classes/com/hystrix/demo/service/TestServices.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/paymentHystrix/target/classes/com/hystrix/demo/web/WebTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/paymentHystrix/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/paymentHystrix/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/paymentHystrix/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/paymentHystrix/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/paymentHystrix/target/paymentHystrix-1.0-SNAPSHOT.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -45,14 +174,26 @@
   <component name="ComposerSettings">
     <execution />
   </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="pom" />
         <option value="Interface" />
         <option value="application" />
         <option value="applicationEureka" />
         <option value="generatorConfig" />
+        <option value="pom" />
         <option value="Class" />
       </list>
     </option>
@@ -73,7 +214,7 @@
       <MavenGeneralSettings>
         <option name="alwaysUpdateSnapshots" value="true" />
         <option name="localRepository" value="D:\repos\Mavenjar" />
-        <option name="mavenHome" value="D:\repos\apache-maven-3.6.3" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../repos/apache-maven-3.6.3" />
         <option name="usePluginRegistry" value="true" />
         <option name="userSettingsFile" value="D:\repos\apache-maven-3.6.3\conf\settings.xml" />
       </MavenGeneralSettings>
@@ -89,9 +230,11 @@
     </option>
   </component>
   <component name="MavenRunner">
-    <option name="delegateBuildToMaven" value="true" />
     <option name="jreName" value="14" />
     <option name="skipTests" value="true" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedIndex" value="1" />
   </component>
   <component name="ProjectId" id="1qBONdU7ANdlNwG5DS0lnRBbIhO" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -109,9 +252,10 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/coustomer/src/main/java/com/jhx/coustomer/po" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -120,15 +264,20 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="模块" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="项目" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="editing.templates" />
+    <property name="settings.editor.selected.configurable" value="fileTemplates" />
     <property name="typescript.add.unambiguous.imports.on.the.fly" value="true" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Test\test\alipayment\src\main\resources" />
       <recent name="D:\Test\test\coustomer\src\main\java\com\jhx\coustomer\po" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -173,22 +322,45 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.HystrixApplication">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+  <component name="RunManager" selected="Spring Boot.NacosConfigApplication">
+    <configuration name="AliOrderApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="aliOrders" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.demo.orderalibaba.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.demo.orderalibaba.AliOrderApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="generated-requests#38" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="38" runType="运行单个请求">
-      <method v="2" />
+    <configuration name="AlibabaApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="alipayment" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.demo.alipay2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.demo.alipay2.AlibabaApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AlibabaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="alipaayment" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.demo.alibaba.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.demo.alibaba.AlibabaApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="CoustomerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="coustomer" />
@@ -205,83 +377,42 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EurakaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+    <configuration name="EurakaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true">
       <module name="euraka" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.jhx.euraka.EurakaApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FeginApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="cusfeign" />
+    <configuration name="NacosConfigApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="aliConfig" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.fegin.demo.*" />
+          <option name="PATTERN" value="com.demo.config.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.fegin.demo.FeginApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="HystrixApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="paymentHystrix" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.hystrix.demo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.hystrix.demo.HystrixApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PaymentApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="payment" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.jhx.payment.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.jhx.payment.PaymentApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PaymentApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="paymentCopy" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.jhx.payment.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.jhx.payment.PaymentApplication" />
-      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.demo.config.NacosConfigApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="HTTP 请求.generated-requests#38" />
       <item itemvalue="Spring Boot.CoustomerApplication" />
-      <item itemvalue="Spring Boot.EurakaApplication" />
       <item itemvalue="Spring Boot.EurakaApplication (1)" />
-      <item itemvalue="Spring Boot.PaymentApplication" />
-      <item itemvalue="Spring Boot.PaymentApplication (1)" />
-      <item itemvalue="Spring Boot.FeginApplication" />
-      <item itemvalue="Spring Boot.HystrixApplication" />
+      <item itemvalue="Spring Boot.EurakaApplication" />
+      <item itemvalue="Spring Boot.AlibabaApplication" />
+      <item itemvalue="Spring Boot.AlibabaApplication (1)" />
+      <item itemvalue="Spring Boot.AliOrderApplication" />
+      <item itemvalue="Spring Boot.NacosConfigApplication" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.HystrixApplication" />
-        <item itemvalue="Spring Boot.FeginApplication" />
-        <item itemvalue="Spring Boot.PaymentApplication (1)" />
-        <item itemvalue="Spring Boot.PaymentApplication" />
-        <item itemvalue="HTTP 请求.generated-requests#38" />
+        <item itemvalue="Spring Boot.NacosConfigApplication" />
+        <item itemvalue="Spring Boot.AliOrderApplication" />
+        <item itemvalue="Spring Boot.AlibabaApplication" />
+        <item itemvalue="Spring Boot.AlibabaApplication (1)" />
+        <item itemvalue="Spring Boot.EurakaApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -323,7 +454,37 @@
       <workItem from="1617274785792" duration="7681000" />
       <workItem from="1617331676336" duration="3941000" />
       <workItem from="1617339487835" duration="1547000" />
-      <workItem from="1617346322505" duration="803000" />
+      <workItem from="1617346322505" duration="927000" />
+      <workItem from="1617416052945" duration="772000" />
+      <workItem from="1617417018100" duration="3274000" />
+      <workItem from="1617441854939" duration="691000" />
+      <workItem from="1617446048755" duration="4056000" />
+      <workItem from="1617450228676" duration="2222000" />
+      <workItem from="1617452556331" duration="481000" />
+      <workItem from="1617453094062" duration="370000" />
+      <workItem from="1617499831888" duration="447000" />
+      <workItem from="1617506319256" duration="2326000" />
+      <workItem from="1617508717466" duration="319000" />
+      <workItem from="1617509074667" duration="4234000" />
+      <workItem from="1617513637805" duration="603000" />
+      <workItem from="1617518674351" duration="273000" />
+      <workItem from="1617774170712" duration="6000" />
+      <workItem from="1617787800338" duration="112000" />
+      <workItem from="1617882755911" duration="1215000" />
+      <workItem from="1617884014779" duration="185000" />
+      <workItem from="1617893398089" duration="420000" />
+      <workItem from="1617893901901" duration="956000" />
+      <workItem from="1618391978411" duration="8000" />
+      <workItem from="1618398147494" duration="2262000" />
+      <workItem from="1618400703245" duration="1734000" />
+      <workItem from="1618449544624" duration="1003000" />
+      <workItem from="1618716691654" duration="1733000" />
+      <workItem from="1618750922356" duration="168000" />
+      <workItem from="1619152259558" duration="273000" />
+      <workItem from="1620100605451" duration="65000" />
+      <workItem from="1620471353529" duration="16000" />
+      <workItem from="1620472735992" duration="8000" />
+      <workItem from="1622511871094" duration="84000" />
     </task>
     <task id="LOCAL-00001" summary="#init">
       <created>1616583061757</created>

@@ -932,3 +932,315 @@ spring:
    }
    ```
 
+## `HandlerInterceptor`
+
+使用方式:
+
+```java
+package com.demo.Filter;
+
+import org.springframework.web.servlet.HandlerInterceptor;
+import org.springframework.web.servlet.ModelAndView;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+/**
+ * @author 靖鸿宣
+ * @since 2021/3/27
+ */
+public class test implements HandlerInterceptor {
+    @Override
+    public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
+        return true;
+    }
+
+    @Override
+    public void postHandle(HttpServletRequest request, HttpServletResponse response, Object handler, ModelAndView modelAndView) throws Exception {
+
+    }
+
+    @Override
+    public void afterCompletion(HttpServletRequest request, HttpServletResponse response, Object handler, Exception ex) throws Exception {
+
+    }
+}
+
+```
+
+
+
+```java
+@Configuration
+public class config implements WebMvcConfigurer {
+    @Override
+    public void addInterceptors(InterceptorRegistry registry) {
+        registry.addInterceptor(new test()).addPathPatterns("/**").excludePathPatterns("/css/**");
+    }
+}
+
+```
+
+## `config`
+
+1. 配置服务端(获取远程`github`配置)
+
+   ```xml
+   <dependencies>
+       <dependency>
+           <groupId>org.springframework.boot</groupId>
+           <artifactId>spring-boot-starter-web</artifactId>
+       </dependency>
+       <dependency>
+           <groupId>org.projectlombok</groupId>
+           <artifactId>lombok</artifactId>
+       </dependency>
+       <dependency>
+           <groupId>org.springframework.boot</groupId>
+           <artifactId>spring-boot-actuator</artifactId>
+       </dependency>
+       <dependency>
+           <groupId>org.springframework.cloud</groupId>
+           <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
+       </dependency>
+       <dependency>
+           <groupId>org.springframework.cloud</groupId>
+           <artifactId>spring-cloud-config-server</artifactId>
+       </dependency>
+   </dependencies>
+   ```
+
+2. 配置yml文件
+
+   ```yml
+   server:
+     port: 3344
+   spring:
+     application:
+       name: cloud-config
+     cloud:
+       config:
+         server:
+           git:
+            strict-host-key-checking: false
+            clone-on-start: true
+            uri: https://github.com/iosyyy/config.git
+            search-paths:
+               - config
+            username: 626797813@qq.com
+            password: jinghong12345..
+         label: master
+   eureka:
+     client:
+      service-url:
+       defaultZone: http://eureka7001.com:7001/eureka/
+   ```
+
+   值得注意的是这里不要开启代理否则会出问题
+
+3. 然后创建启动类
+
+   ```java
+   @EnableConfigServer
+   @SpringBootApplication
+   public class ConfigApplication {
+   
+       public static void main(String[] args) {
+           SpringApplication.run(ConfigApplication.class, args);
+       }
+   
+   }
+   ```
+
+4. 启动后运行http://127.0.0.1:3344/master/config-dev.yml
+
+   注意这里的名字是必须是******-******.yml,-前面代表name后面代表profile(这东西的官方规范),并且不要使用代理
+
+5. 然后创建服务端使用配置
+
+   增加依赖
+
+   ```xml
+   <dependency>
+               <groupId>org.springframework.cloud</groupId>
+               <artifactId>spring-cloud-starter-config</artifactId>
+   </dependency>
+   ```
+
+6. 创建bootstrap.yml(系统级别的配置文件)对application.yml有覆盖作用
+
+   ```yml
+   server:
+     port: 3345
+   spring:
+     application:
+       name: config-client
+     cloud:
+       config:
+         name: config #上面的name
+         label: master #上面的label
+         profile: dev #上面的profile
+         uri: http://127.0.0.1:3344/
+   eureka:
+     client:
+       service-url:
+         defaultZone: http://eureka7001.com:7001/eureka/
+   management:
+     endpoints:
+       web:
+         exposure:
+           include: "*"
+   
+   ```
+
+7. 创建启动类
+
+   ```java
+   package com.config.client;
+   
+   import org.springframework.boot.SpringApplication;
+   import org.springframework.boot.autoconfigure.SpringBootApplication;
+   import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+   
+   /**
+    * @author 靖鸿宣
+    * @since 2021/4/8
+    */
+   @SpringBootApplication
+   @EnableEurekaClient
+   public class ConfigClientApplication {
+   
+       public static void main(String[] args) {
+           SpringApplication.run(ConfigClientApplication.class, args);
+       }
+   
+   }
+   
+   ```
+
+8. 创建web类
+
+   ```java
+   @RestController
+   @RefreshScope
+   public class WebTest {
+   
+       @Value("${config.info}")
+       private String word;
+   
+       @GetMapping("/getit")
+       public String getIt(){
+           return word;
+       }
+   }
+   ```
+
+   运行后发现启动成功
+
+## 使用nacos做负载均衡和配置管理
+
+1. 首先是下载nacos服务器
+
+   点击以下链接即可下载
+
+   https://github.com/alibaba/nacos/tags
+
+2. 下载后在cmd中运行startup.cmd即可
+
+3. 如果启动成功以后运行页面 http://10.50.71.100:8848/nacos/index.html
+
+   如果显示如下则结果正确
+
+   ![image-20210418114205943](https://tests-1305221371.cos.ap-nanjing.myqcloud.com/20210418114213.png)
+
+   注意进入此页面之前需要先登录默认的账号和密码都是nacos
+
+4. 一些常见错误
+
+   * 如果提示JAVA_HOME找不到jdk可能是jdk的版本问题,建议使用1.8以上的版本如果不能解决则,右键startup.cmd文件,选择用文本编辑器打开(这里选什么都行).更改
+
+     ```cmd
+     if not exist "%JAVA_HOME%\bin\java.exe" echo Please set the JAVA_HOME variable in your environment, We need java(x64)! jdk8 or later is better! & EXIT /B 1
+     ```
+
+     为,注意JAVA_HOME是帮你找到本地的jdk路径用的
+
+     ```cmd
+     set JAVA_HOME=C:\Program Files\Java\jdk1.8.0_281\
+     if not exist "%JAVA_HOME%\bin\java.exe" echo Please set the JAVA_HOME variable in your environment, We need java(x64)! jdk8 or later is better! & EXIT /B 1
+     
+     ```
+
+   * 如果还是启动报错则修改MODE为单机模式
+
+     ```cmd
+     set MODE="standalone"
+     ```
+
+   
+
+然后配置服务进入nacos
+
+直接修改配置文件即可
+
+```yaml
+spring:
+  application:
+   name: nacos-provider
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+server:
+  port: 9092
+management:
+  server:
+    port: 9092
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+```
+
+这里的spring.cloud.nacos.discovery.server-addr是代表nacos服务器的地址
+
+然后在启动类中添加@EnableDiscoveryClient注解即可完成服务配置
+
+负载均衡和上面的类似这里不做过多说明
+
+然后使用nacos代替config
+
+首先创建bootstrap.yml文件配置如下这里的spring.application.name一定要配置后面有用
+
+```yml
+server:
+  port: 90
+
+spring:
+  application:
+    name: nacos-config
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+      config:
+        server-addr: 127.0.0.1:8848
+        file-extension: yaml
+```
+
+然后创建application.yml文件
+
+```yml
+spring:
+  profiles:
+    active: dev
+```
+
+然后在nacos中添加配置文件
+
+这里的格式是${spring.application.name}-\${spring.profiles.active}.yaml
+
+也就是这里的![image-20210418114934394](https://tests-1305221371.cos.ap-nanjing.myqcloud.com/20210418114934.png)Data ID要设置成上面格式的名字
+
+然后直接读取即可成功,注意这里配置了nacos所以要加上@EnableDiscoveryClient注解
+

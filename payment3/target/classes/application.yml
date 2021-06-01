@@ -1,8 +1,0 @@
-server:
-  port: 8084
-spring:
-  application:
-    name: cloud-provider-8084
-  cloud:
-    zookeeper:
-      connect-string: 8.136.225.205:2181

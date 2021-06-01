@@ -1,0 +1,24 @@
+server:
+  port: 9527
+spring:
+  application:
+    name: cloud-GateWay
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          lower-case-service-id: true
+      routes:
+        - id: paymentrouthy
+          uri: http://localhost:8080
+          predicates:
+            - Path=/payment/discovery/**
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true #是否将eureka注册写不写都是一样的但是建议将其注册
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka/
+  instance:
+    instance-id: test-eureka
+

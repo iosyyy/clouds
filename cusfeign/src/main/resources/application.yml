@@ -11,3 +11,6 @@ eureka:
 logging:
   level:
     com.fegin.demo.service.FeginService: debug
+feign:
+  hystrix:
+    enabled: truez
